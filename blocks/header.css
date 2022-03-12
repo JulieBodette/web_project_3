@@ -1,0 +1,13 @@
+.header {
+  display:flex;
+  justify-content: center;
+}
+
+.header__logo {
+  margin: auto;
+  background-color: red;
+}
+
+.header__title {
+  
+}
