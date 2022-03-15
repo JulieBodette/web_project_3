@@ -1,0 +1,32 @@
+.lead {
+
+}
+
+.lead__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  /* or 104% */
+  text-align: center; 
+
+  margin:0; /*get rid of default margins */
+}
+
+.lead__subtitle {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+/* or 120% */
+
+text-align: center;
+margin-top:32px;
+/*margin:0; get rid of default margins */
+
+/*should be 32 px below previous text - add this */
+
+
+}
