@@ -21,12 +21,16 @@ font-weight: 400;
 font-size: 30px;
 line-height: 36px;
 /* or 120% */
-
 text-align: center;
-margin-top:32px;
+margin: 32px auto 64px auto;/* top right bottom left */
+max-width:720px;
+/*possibly change max width at different resolutions for responsive design */
 /*margin:0; get rid of default margins */
+}
 
-/*should be 32 px below previous text - add this */
-
-
+.lead__image{
+  max-width:984px;
+  /*margin:auto;*/
+  /*need to center it and margin auto is not working */
+  /*also need to add borders/outlines */
 }
