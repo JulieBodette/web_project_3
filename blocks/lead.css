@@ -30,7 +30,8 @@ max-width:720px;
 
 .lead__image{
   max-width:984px;
-  /*margin:auto;*/
+  display:block;
+  margin:auto;
   /*need to center it and margin auto is not working */
   /*also need to add borders/outlines */
 }
