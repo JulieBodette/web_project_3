@@ -32,6 +32,6 @@ max-width:720px;
   max-width:984px;
   display:block;
   margin:auto;
-  /*need to center it and margin auto is not working */
+  /*need display:block AND margin auto to center it */
   /*also need to add borders/outlines */
 }
