@@ -1,0 +1,92 @@
+.place
+{
+  display: grid;
+  grid-template-areas:
+   "header artist"
+   "image text"
+   "button text"; /*text takes up 2 cells also is there semicolon here*/
+   /*set these values on the objects with grid-area:name */
+
+}
+
+.place__header
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+
+  grid-area:"header";
+}
+
+.place__image 
+{
+  grid-area:"image";
+}
+
+.place__artist
+{
+  grid-area:"artist";
+}
+
+.place__artist-label
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #AAAAAA;
+}
+
+.place__artist-text
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+}
+
+.place__text
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  /* or 29px */
+
+  grid-area:"text";
+
+}
+
+.place__paragraph
+{
+
+}
+
+.place__button 
+{
+  padding: 13px 20px;
+  background: #0278FE;
+  border-radius: 4px;
+
+  grid-area:"button";
+}
+
+.place__button-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
