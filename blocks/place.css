@@ -5,7 +5,7 @@
     "image text"
     "button text"; /*text takes up 2 cells also is there semicolon here*/
   /*set these values on the objects with grid-area:name */
-  margin: auto;
+  margin: 0px auto 80px auto; /* top right bottom left */
   max-width: 984px;
   grid-row-gap: 48px; /* gap between title and pic. also gap btwn pic and button. */
   grid-column-gap: 40px; /*gap between paragraph and image */
@@ -28,7 +28,8 @@
 
 .place__artist {
   grid-area: "artist";
-  margin-top: 107px;
+  /* not margin-top: 107px; because although that works for the first one, it messes up the rest */
+  align-self: end; /*instead of setting margin-top */
   padding: 0px;
 }
 
