@@ -10,24 +10,24 @@
   grid-row-gap: 48px; /* gap between title and pic. also gap btwn pic and button. */
   grid-column-gap: 40px; /*gap between paragraph and image */
 }
-/*comment on laptop, lets get it to desktop */
+
 .place__header {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-  grid-area: "header";
+  grid-area: header; /*NO QUOTES */
   max-width: 460px;
   margin: 0;
 }
 
 .place__image {
-  grid-area: "image";
+  grid-area: image; /*NO QUOTES */
 }
 
 .place__artist {
-  grid-area: "artist";
+  grid-area: artist; /*NO QUOTES */
   /* not margin-top: 107px; because although that works for the first one, it messes up the rest */
   align-self: end; /*instead of setting margin-top */
   padding: 0px;
@@ -43,7 +43,8 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #aaaaaa;
-  margin: 0px; /*reset */
+  margin: 0px 0px 8px 0px; /* top right bottom left */
+  /*bottom margin on this instead of top one on next so that it only affects 1 item */
 }
 
 .place__artist-text {
@@ -53,7 +54,7 @@
   font-size: 18px;
   line-height: 22px;
   /* identical to box height, or 122% */
-  margin: 8px 0px 0px 0px; /* top right bottom left */
+  margin: 0px; /*reset */
 }
 
 .place__text {
@@ -63,7 +64,7 @@
   font-size: 18px;
   line-height: 163%;
   /* or 29px */
-  grid-area: "text";
+  grid-area: text; /*NO QUOTES */
 }
 
 .place__paragraph {
@@ -72,8 +73,9 @@
 .place__button {
   padding: 13px 20px;
   background: #0278fe;
+  border: none; /*remove default shadow border style */
   border-radius: 4px;
-  grid-area: "button";
+  grid-area: button; /*NO QUOTES */
   width: 248px; /*width and height are the same for all screen sizes */
   height: 48px;
   padding: 0px; /*this removes the padding inside the button so the text looks correct */

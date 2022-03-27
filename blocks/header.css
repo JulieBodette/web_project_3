@@ -1,13 +1,11 @@
 .header {
-  display:flex;
+  display: flex;
   justify-content: center;
-  padding-top:34px;
-  padding-bottom:90px;
-  margin:0;
+  padding-top: 34px;
+  padding-bottom: 90px;
+  margin: 0;
 }
 
 .header__logo {
   margin: 0; /*get rid of default margins */
-  
 }
-

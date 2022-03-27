@@ -1,0 +1,79 @@
+.cover {
+  position: relative;
+  /* so that children can use z-index and absolute positioning */
+}
+
+.cover__group {
+  position: absolute;
+  z-index: 1;
+  /* need to center it */
+  top: 50%; /*moves top corner to center */
+  left: 50%; /*moves left corner to center */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* x, y moves item so that item middle is centered, not top left corner is centered*/
+}
+
+.cover__image {
+  display: block; /*needed to center it using margin:auto */
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.cover__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  /* identical to box height, or 106% */
+  text-align: center;
+  color: #fffdfd;
+  padding: 0px; /*reset */
+  margin: 0px 0px 32px 0px; /* top right bottom left */
+}
+
+.cover__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+  text-align: center;
+  color: #ffffff;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.cover__button {
+  background: #0278fe;
+  border: none; /*remove default shadow border style */
+  border-radius: 4px;
+  display: block; /*needed to center it using margin:auto */
+  margin: 32px auto 0px auto; /* top right bottom left */
+
+  /*correct size of button and padding of text re:figma*/
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 13px 20px;
+}
+
+.cover__button-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #ffffff;
+
+  /*correct size of button and padding of text re:figma*/
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}

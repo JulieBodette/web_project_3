@@ -1,37 +1,37 @@
 .lead {
-
 }
 
 .lead__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 96px;
   line-height: 100px;
   /* or 104% */
-  text-align: center; 
+  text-align: center;
 
-  margin:0; /*get rid of default margins */
+  margin: 0 auto; /*get rid of default margins */
+  max-width: 793px;
 }
 
 .lead__subtitle {
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 36px;
-/* or 120% */
-text-align: center;
-margin: 32px auto 64px auto;/* top right bottom left */
-max-width:720px;
-/*possibly change max width at different resolutions for responsive design */
-/*margin:0; get rid of default margins */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  /* or 120% */
+  text-align: center;
+  margin: 32px auto 64px auto; /* top right bottom left */
+  max-width: 720px;
+  /*possibly change max width at different resolutions for responsive design */
+  /*margin:0; get rid of default margins */
 }
 
-.lead__image{
-  max-width:984px;
-  display:block;
-  margin:auto;
+.lead__image {
+  max-width: 984px;
+  display: block;
+  margin: auto;
   /*need display:block AND margin auto to center it */
   /*also need to add borders/outlines */
 }

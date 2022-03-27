@@ -1,0 +1,16 @@
+.footer {
+}
+
+.footer__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  text-align: center;
+  color: #ffffff;
+
+  padding: 0px; /*reset */
+  margin: 92px auto 24px auto; /* top right bottom left */
+}
