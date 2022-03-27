@@ -8,7 +8,7 @@
    /*set these values on the objects with grid-area:name */
 
 }
-
+/*comment on laptop, lets get it to desktop */
 .place__header
 {
   font-family: 'Inter';
@@ -16,7 +16,6 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-
   grid-area:"header";
 }
 
@@ -62,7 +61,6 @@
   font-size: 18px;
   line-height: 163%;
   /* or 29px */
-
   grid-area:"text";
 
 }
@@ -77,7 +75,6 @@
   padding: 13px 20px;
   background: #0278FE;
   border-radius: 4px;
-
   grid-area:"button";
 }
 
