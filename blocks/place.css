@@ -1,37 +1,39 @@
-.place
-{
+.place {
   display: grid;
   grid-template-areas:
-   "header artist"
-   "image text"
-   "button text"; /*text takes up 2 cells also is there semicolon here*/
-   /*set these values on the objects with grid-area:name */
-
+    "header artist"
+    "image text"
+    "button text"; /*text takes up 2 cells also is there semicolon here*/
+  /*set these values on the objects with grid-area:name */
+  margin: auto;
+  max-width: 984px;
+  grid-row-gap: 48px; /* gap between title and pic. also gap btwn pic and button. */
+  grid-column-gap: 40px; /*gap between paragraph and image */
 }
 /*comment on laptop, lets get it to desktop */
-.place__header
-{
-  font-family: 'Inter';
+.place__header {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-  grid-area:"header";
+  grid-area: "header";
+  max-width: 460px;
+  margin: 0;
 }
 
-.place__image 
-{
-  grid-area:"image";
+.place__image {
+  grid-area: "image";
 }
 
-.place__artist
-{
-  grid-area:"artist";
+.place__artist {
+  grid-area: "artist";
+  margin-top: 107px;
+  padding: 0px;
 }
 
-.place__artist-label
-{
-  font-family: 'Inter';
+.place__artist-label {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -39,51 +41,51 @@
   /* identical to box height */
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #AAAAAA;
+  color: #aaaaaa;
+  margin: 0px; /*reset */
 }
 
-.place__artist-text
-{
-  font-family: 'Inter';
+.place__artist-text {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   /* identical to box height, or 122% */
-
+  margin: 8px 0px 0px 0px; /* top right bottom left */
 }
 
-.place__text
-{
-  font-family: 'Inter';
+.place__text {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
   /* or 29px */
-  grid-area:"text";
-
+  grid-area: "text";
 }
 
-.place__paragraph
-{
-
+.place__paragraph {
 }
 
-.place__button 
-{
+.place__button {
   padding: 13px 20px;
-  background: #0278FE;
+  background: #0278fe;
   border-radius: 4px;
-  grid-area:"button";
+  grid-area: "button";
+  width: 248px; /*width and height are the same for all screen sizes */
+  height: 48px;
+  padding: 0px; /*this removes the padding inside the button so the text looks correct */
 }
 
 .place__button-text {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   /* identical to box height */
-  color: #FFFFFF;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
 }

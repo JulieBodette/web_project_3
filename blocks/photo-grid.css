@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  row-gap:16px;
-  column-gap:16px;
-  margin:118px auto 0px auto; /* top right bottom left */
-  max-width:1184px;
+  row-gap: 16px;
+  column-gap: 16px;
+  margin: 118px auto 92px auto; /* top right bottom left */
+  max-width: 1184px;
 }
