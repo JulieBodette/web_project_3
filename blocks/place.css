@@ -68,6 +68,8 @@
 }
 
 .place__paragraph {
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .place__button {
@@ -97,11 +99,15 @@
 @media screen and (max-width: 1024px) {
   .place {
     grid-column-gap: 28px; /*gap between paragraph and image */
+    grid-template-columns: 340px 1fr;
+    margin: 0 auto;
+    padding-left: 24px;
   }
 
   .place__image {
-    width: 340px;
+    max-width: 340px;
     height: auto;
+    justify-self: end; /*makes sure there is space on the left and it is close to the text */
     /*smaller size 340px*/
   }
 
