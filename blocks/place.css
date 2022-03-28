@@ -92,3 +92,28 @@
   margin: 0px;
   padding: 0px;
 }
+
+/*styles for 768px screen */
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-column-gap: 28px; /*gap between paragraph and image */
+  }
+
+  .place__image {
+    width: 340px;
+    height: auto;
+    /*smaller size 340px*/
+  }
+
+  .place__header {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__text {
+    font-size: 16px;
+    line-height: 163%;
+    max-width: 352px;
+  }
+}
