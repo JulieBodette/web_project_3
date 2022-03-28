@@ -35,3 +35,10 @@
   /*need display:block AND margin auto to center it */
   /*also need to add borders/outlines */
 }
+
+/*styles for 768px screen*/
+@media screen and (max-width: 1024px) {
+  .lead__image {
+    max-width: 100%;
+  }
+}

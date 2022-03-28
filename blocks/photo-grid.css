@@ -7,3 +7,12 @@
   margin: 118px auto 92px auto; /* top right bottom left */
   max-width: 1184px;
 }
+
+/*styles for 768px screen
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 90px auto 80px auto; /* top right bottom left 
+  }
+}
+
+*/

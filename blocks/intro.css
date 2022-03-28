@@ -1,55 +1,55 @@
-.intro
-{
-  max-width:785px;
-  max-height:490px;
-  margin: 0 auto;
-
+.intro {
+  max-width: 785px;
+  max-height: 490px;
+  padding-left: 148px;
 }
 
-.intro__title
-{
-  font-family: 'Inter';
+.intro__title {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-size: 54px;
   line-height: 58px;
-  max-width:785px;
-  margin:94px auto 40px auto; /*94 top 40 bottom */ /* top right bottom left */
+  max-width: 785px;
+  margin: 94px auto 40px auto; /*94 top 40 bottom */ /* top right bottom left */
 }
 
-.intro__quote 
-{
-  font-family: 'Inter';
+.intro__quote {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  max-width:690px;
+  max-width: 690px;
   /* or 142% */
   /*margin:0 auto; not centered*/
 }
 
-.intro__name 
-{
-  font-family: 'Inter';
+.intro__name {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  max-width:690px;
+  max-width: 690px;
   /* identical to box height, or 142% */
-  
+
   text-align: right; /*goes on right side */
 }
 
-.intro__text 
-{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 163%;
-/* or 26px */
-max-width:690px;
+.intro__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  /* or 26px */
+  max-width: 690px;
+}
 
+/*styles for 768px screen*/
+@media screen and (max-width: 1024px) {
+  .intro {
+    padding-left: 24px;
+  }
 }
