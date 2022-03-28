@@ -50,14 +50,14 @@
     </div>
 
     <div class="photo-grid">
-      <img src="images/__item.jpg" />
-      <img src="images/__item-1.jpg" />
-      <img src="images/__item-2.jpg" />
-      <img src="images/__item-3.jpg" />
-      <img src="images/__item-4.jpg" />
-      <img src="images/__item-5.jpg" />
-      <img src="images/__item-6.jpg" />
-      <img src="images/__item-7.jpg" />
+      <img class="photo-grid__item" src="images/__item.jpg" />
+      <img class="photo-grid__item" src="images/__item-1.jpg" />
+      <img class="photo-grid__item" src="images/__item-2.jpg" />
+      <img class="photo-grid__item" src="images/__item-3.jpg" />
+      <img class="photo-grid__item" src="images/__item-4.jpg" />
+      <img class="photo-grid__item" src="images/__item-5.jpg" />
+      <img class="photo-grid__item" src="images/__item-6.jpg" />
+      <img class="photo-grid__item" src="images/__item-7.jpg" />
     </div>
     <!--i think 80px of space between each place/city? double check.-->
 
@@ -190,7 +190,9 @@
         </button>
       </article>
       <div class="cover">
-        <img class="cover__image" src="../images/__background.png" />
+        <div class="cover__overlay">
+          <img class="cover__image" src="../images/__background.png" />
+        </div>
         <div class="cover__group">
           <h2 class="cover__title">Visit us</h2>
           <p class="cover__subtitle">Year-round</p>

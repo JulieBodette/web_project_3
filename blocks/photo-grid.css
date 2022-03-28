@@ -8,11 +8,20 @@
   max-width: 1184px;
 }
 
-/*styles for 768px screen
-@media screen and (max-width: 1024px) {
-  .header {
-    margin: 90px auto 80px auto; /* top right bottom left 
-  }
+.photo-grid__item {
+  width: 284px; /*bigger-original img size- at smaller screen size */
+  height: auto;
 }
 
-*/
+/*styles for 768px screen */
+@media screen and (max-width: 1024px) {
+  .photo-grid {
+    margin: 90px auto 88px auto; /* top right bottom left */ /*manually set left margin 24px*/
+    max-width: 720px; /*max width needed to be smaller than screen size before margin auto did anything */
+  }
+
+  .photo-grid__item {
+    width: 352px; /*bigger-original img size- at smaller screen size */
+    height: auto;
+  }
+}
