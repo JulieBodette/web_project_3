@@ -57,12 +57,16 @@
   border-radius: 4px;
   display: block; /*needed to center it using margin:auto */
   margin: 32px auto 0px auto; /* top right bottom left */
+  width: 137px;
+  height: 48px;
 
   /*correct size of button and padding of text re:figma*/
+  /*
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 13px 20px;
+  */
 }
 
 .cover__button-text {
@@ -73,12 +77,17 @@
   line-height: 22px;
   /* identical to box height */
   color: #ffffff;
+  margin: 0; /*reset */
+  padding: 13px 20px 13px 20px; /*reset */ /* top right bottom left */
+  text-decoration: none; /*this should remove the underline but it does not */
 
   /*correct size of button and padding of text re:figma*/
+  /*
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
+  */
 }
 
 /*styles for 768px screen */
