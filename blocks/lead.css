@@ -41,4 +41,8 @@
   .lead__image {
     max-width: 100%;
   }
+
+  .lead__title {
+    max-width: 720px;
+  }
 }

@@ -4,6 +4,7 @@
     "header artist"
     "image text"
     "button text"; /*text takes up 2 cells also is there semicolon here*/
+
   /*set these values on the objects with grid-area:name */
   margin: 0px auto 80px auto; /* top right bottom left */
   max-width: 984px;
@@ -99,9 +100,14 @@
 @media screen and (max-width: 1024px) {
   .place {
     grid-column-gap: 28px; /*gap between paragraph and image */
-    grid-template-columns: 340px 1fr;
     margin: 0px auto 72px auto; /* top right bottom left */
     padding-left: 24px;
+    grid-template-columns: 340px 1fr;
+    /*340px sets first one to 340px exactly. 1fr sets second one to fill the space. */
+    /* without 340px 1fr; they would default to auto (same size)*/
+    grid-template-rows: auto auto 1fr;
+    /* auto 1fr is like order of operations. auto is by default the size of the object. 1fr will grow to fill the space. */
+    /*auto auto is same as 1fr 1fr, difference only matters when you use both together */
   }
 
   .place__image {

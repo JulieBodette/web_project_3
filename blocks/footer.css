@@ -14,3 +14,17 @@
   padding: 0px; /*reset */
   margin: 92px auto 24px auto; /* top right bottom left */
 }
+
+/*styles for 768px screen*/
+@media screen and (max-width: 1024px) {
+  .footer__text {
+    margin: 88px auto 24px auto; /* top right bottom left */
+  }
+}
+
+/*styles for 320px screen*/
+@media screen and (max-width: 544px) {
+  .footer__text {
+    margin: 64px auto 24px auto; /* top right bottom left */
+  }
+}
