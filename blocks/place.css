@@ -82,6 +82,7 @@
   width: 248px; /*width and height are the same for all screen sizes */
   height: 48px;
   padding: 0px; /*this removes the padding inside the button so the text looks correct */
+  text-decoration: none; /*remove the underline. needs to be on button <a> tag and not the <p> tag*/
 }
 
 .place__button-text {
@@ -93,7 +94,7 @@
   /* identical to box height */
   color: #ffffff;
   margin: 0px;
-  padding: 0px;
+  padding: 13px 20px 13px 20px; /*reset */ /* top right bottom left */
 }
 
 /*styles for 768px screen */

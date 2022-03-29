@@ -59,6 +59,7 @@
   margin: 32px auto 0px auto; /* top right bottom left */
   width: 137px;
   height: 48px;
+  text-decoration: none;
 
   /*correct size of button and padding of text re:figma*/
   /*
@@ -79,7 +80,7 @@
   color: #ffffff;
   margin: 0; /*reset */
   padding: 13px 20px 13px 20px; /*reset */ /* top right bottom left */
-  text-decoration: none; /*this should remove the underline but it does not */
+  /*text-decoration: none;*/ /*this should remove the underline but it does not */
 
   /*correct size of button and padding of text re:figma*/
   /*
