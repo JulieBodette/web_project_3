@@ -100,7 +100,7 @@
   .place {
     grid-column-gap: 28px; /*gap between paragraph and image */
     grid-template-columns: 340px 1fr;
-    margin: 0 auto;
+    margin: 0px auto 72px auto; /* top right bottom left */
     padding-left: 24px;
   }
 
@@ -117,7 +117,7 @@
     line-height: 46px;
   }
 
-  .place__text {
+  .place__paragraph {
     font-size: 16px;
     line-height: 163%;
     max-width: 352px;

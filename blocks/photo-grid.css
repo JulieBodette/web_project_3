@@ -1,9 +1,8 @@
 .photo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  row-gap: 16px;
-  column-gap: 16px;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   margin: 118px auto 92px auto; /* top right bottom left */
   max-width: 1184px;
 }
@@ -18,10 +17,14 @@
   .photo-grid {
     margin: 90px auto 88px auto; /* top right bottom left */ /*manually set left margin 24px*/
     max-width: 720px; /*max width needed to be smaller than screen size before margin auto did anything */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
 
   .photo-grid__item {
-    width: 352px; /*bigger-original img size- at smaller screen size */
+    width: 100%; /*bigger-original img size- at smaller screen size */
     height: auto;
   }
+
+  /*give preferred width and max width */
 }
