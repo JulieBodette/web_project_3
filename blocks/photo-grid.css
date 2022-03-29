@@ -26,5 +26,5 @@
     height: auto;
   }
 
-  /*give preferred width and max width */
+  /*for grid you can give preferred width and max width (better than flexbox)*/
 }

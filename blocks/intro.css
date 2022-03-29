@@ -1,6 +1,6 @@
 .intro {
   max-width: 785px;
-  padding-left: 148px;
+  padding-left: 148px; /* this affects the horizontal position of everything inside */
 }
 
 .intro__title {
@@ -10,7 +10,8 @@
   font-size: 54px;
   line-height: 58px;
   max-width: 785px;
-  margin: 94px auto 40px auto; /*94 top 40 bottom */ /* top right bottom left */
+  margin: 92px 0px 40px 0px; /*94 top 40 bottom */ /* top right bottom left */
+  padding: 0px; /*reset */
 }
 
 .intro__quote {
@@ -20,6 +21,8 @@
   font-size: 24px;
   line-height: 34px;
   max-width: 690px;
+  margin: 0px 0px 10px 0px; /*reset */ /* top right bottom left */
+  padding: 0px; /*reset */
   /* or 142% */
   /*margin:0 auto; not centered*/
 }
@@ -31,6 +34,8 @@
   font-size: 24px;
   line-height: 34px;
   max-width: 690px;
+  margin: 0px 0px 32px 0px; /*reset */ /* top right bottom left */
+  padding: 0px; /*reset */
   /* identical to box height, or 142% */
 
   text-align: right; /*goes on right side */
@@ -43,12 +48,18 @@
   font-size: 16px;
   line-height: 163%;
   /* or 26px */
-  max-width: 690px;
+  margin: 0px; /*reset */
+  padding: 0px; /*reset */
 }
 
 /*styles for 768px screen*/
 @media screen and (max-width: 1024px) {
   .intro {
     padding-left: 24px;
+    max-width: 720px;
+  }
+
+  .intro__title {
+    margin: 88px 0px 40px 0px; /*88 top changed */ /* top right bottom left */
   }
 }
