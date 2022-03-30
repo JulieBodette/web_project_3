@@ -1,7 +1,19 @@
-.page
-{
-  background-color: #2A2C2F;
+.page {
+  background-color: #2a2c2f;
   color: white;
   font-weight: 400;
   /*default font is 400 weight and colored white */
+  display: flex; /*margin: auto works inside flex. margin:auto does not always worjk inside display:block */
+}
+
+.page__content {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/*styles for 320px screen*/
+@media screen and (max-width: 544px) {
+  .page__content {
+    max-width: 320px;
+  }
 }

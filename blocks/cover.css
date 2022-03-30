@@ -1,5 +1,7 @@
 .cover {
   position: relative;
+  width: 100%;
+  margin: auto;
   /* so that children can use z-index and absolute positioning */
 }
 
@@ -10,6 +12,7 @@
   background-image: url("../images/__background.png");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: center; /* Center the image */
+  background-size: cover;
   display: block; /*needed to center it using margin:auto */
   margin: auto;
   /*min-height:740px; */
@@ -134,5 +137,30 @@
   }
   .cover__title {
     padding: 246px 0px 0px 0px; /* top right bottom left */
+  }
+}
+
+/*styles for 320px screen*/
+@media screen and (max-width: 544px) {
+  .cover__group {
+    min-height: 254px; /*override previous */
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  .cover__title {
+    padding: 46px 0px 0px 0px; /* top right bottom left */
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0px 0px 16px 0px; /* top right bottom left */
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .cover__button {
+    margin: 16px auto 0px auto; /* top right bottom left */
   }
 }

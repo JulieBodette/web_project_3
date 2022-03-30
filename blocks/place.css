@@ -145,11 +145,20 @@
       "image"
       "text"
       "button";
-    padding-left: 0px; /* no padding on image */
+    margin: 0px auto 50px auto; /* top right bottom left */
+    padding: 0px;
+
     grid-row-gap: 30px; /* gap between title and pic. also gap btwn pic and button. */
   }
+  .place__image {
+    justify-self: auto;
+    max-width: 320px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
   .place__header {
-    padding-left: 16px;
+    margin-left: 16px;
     max-width: 288px;
     font-size: 32px;
     line-height: 35px;
