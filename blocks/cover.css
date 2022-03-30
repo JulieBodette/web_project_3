@@ -14,10 +14,18 @@
     -50%
   ); /* x, y moves item so that item middle is centered, not top left corner is centered*/
 }
+
 .cover__overlay {
-  background: #2a2c2f;
-  opacity: 0.3;
+  /*background: #2a2c2f; */
+  background: blue;
+  opacity: 0.8; /*0 is completely transparent, 1 is not transparent at all*/
 }
+
+.cover__overlay:hover {
+  opacity: 0.3;
+  background: red;
+}
+
 .cover__image {
   display: block; /*needed to center it using margin:auto */
   margin: auto;
@@ -59,7 +67,7 @@
   margin: 32px auto 0px auto; /* top right bottom left */
   width: 137px;
   height: 48px;
-  text-decoration: none;
+  text-decoration: none; /*remove the underline. needs to be on button <a> tag and not the <p> tag*/
 
   /*correct size of button and padding of text re:figma*/
   /*
@@ -68,6 +76,10 @@
   align-items: flex-start;
   padding: 13px 20px;
   */
+}
+
+.cover__button:hover {
+  background: #0063d2;
 }
 
 .cover__button-text {
@@ -80,7 +92,6 @@
   color: #ffffff;
   margin: 0; /*reset */
   padding: 13px 20px 13px 20px; /*reset */ /* top right bottom left */
-  /*text-decoration: none;*/ /*this should remove the underline but it does not */
 
   /*correct size of button and padding of text re:figma*/
   /*

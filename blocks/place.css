@@ -85,6 +85,10 @@
   text-decoration: none; /*remove the underline. needs to be on button <a> tag and not the <p> tag*/
 }
 
+.place__button:hover {
+  background: #0063d2;
+}
+
 .place__button-text {
   font-family: "Inter";
   font-style: normal;
