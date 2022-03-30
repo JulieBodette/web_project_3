@@ -3,7 +3,7 @@
   grid-template-areas:
     "header artist"
     "image text"
-    "button text"; /*text takes up 2 cells also is there semicolon here*/
+    "button text"; /*text takes up 2 cells*/
 
   /*set these values on the objects with grid-area:name */
   margin: 0px auto 80px auto; /* top right bottom left */
@@ -79,7 +79,7 @@
   border: none; /*remove default shadow border style */
   border-radius: 4px;
   grid-area: button; /*NO QUOTES */
-  width: 248px; /*width and height are the same for all screen sizes */
+  width: 248px;
   height: 48px;
   padding: 0px; /*this removes the padding inside the button so the text looks correct */
   text-decoration: none; /*remove the underline. needs to be on button <a> tag and not the <p> tag*/
@@ -132,5 +132,43 @@
     font-size: 16px;
     line-height: 163%;
     max-width: 352px;
+  }
+}
+
+/*styles for 320px screen*/
+@media screen and (max-width: 544px) {
+  .place {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "artist"
+      "image"
+      "text"
+      "button";
+    padding-left: 0px; /* no padding on image */
+    grid-row-gap: 30px; /* gap between title and pic. also gap btwn pic and button. */
+  }
+  .place__header {
+    padding-left: 16px;
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__artist {
+    margin-left: 16px;
+    max-width: 288px;
+  }
+
+  .place__text {
+    margin-left: 16px;
+    max-width: 288px;
+  }
+  .place__button {
+    margin-left: 16px;
+    width: 288px;
+  }
+  .place__button-text {
+    padding: 13px 40px 13px 40px; /* top right bottom left */
   }
 }

@@ -63,3 +63,20 @@
     margin: 88px 0px 40px 0px; /*88 top changed */ /* top right bottom left */
   }
 }
+
+/*styles for 320px screen*/
+@media screen and (max-width: 544px) {
+  .intro {
+    padding-left: 16px;
+    max-width: 288px;
+  }
+  .intro__title {
+    margin: 64px 0px 40px 0px; /*64 top changed */ /* top right bottom left */
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .intro__quote {
+    line-height: 30px;
+  }
+}

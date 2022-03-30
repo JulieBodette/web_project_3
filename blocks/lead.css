@@ -46,3 +46,18 @@
     max-width: 720px;
   }
 }
+
+/*styles for 320px screen*/
+@media screen and (max-width: 544px) {
+  .lead__title {
+    max-width: 288px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .lead__subtitle {
+    max-width: 288px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
