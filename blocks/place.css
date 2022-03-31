@@ -81,7 +81,6 @@
   grid-area: button; /*NO QUOTES */
   width: 248px;
   height: 48px;
-  padding: 0px; /*this removes the padding inside the button so the text looks correct */
   text-decoration: none; /*remove the underline. needs to be on button <a> tag and not the <p> tag*/
 }
 
