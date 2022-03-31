@@ -9,7 +9,7 @@
   position: relative;
   z-index: 5;
   width: 100%;
-  background-image: url("../images/__background.png");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: center; /* Center the image */
   background-size: cover;
