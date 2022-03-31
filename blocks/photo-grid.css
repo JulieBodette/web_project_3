@@ -1,15 +1,36 @@
 .photo-grid {
+  /*grid-template-columns:
+    minmax(100px, 284px) minmax(100px, 284px)
+    minmax(100px, 284px)
+    minmax(100px, 284px); 
+  grid-template-columns:
+    minmax(mincontent, maxcontent) minmax(mincontent, maxcontent)
+    minmax(mincontent, maxcontent)
+    minmax(mincontent, maxcontent);
+    grid-template-columns: auto-fit auto-fit auto-fit auto-fit; */
+
+  margin: 118px auto 92px auto; /* top right bottom left */
+  max-width: 1232px;
+  padding-left: 24px;
+  padding-right: 24px;
+  /*max-width: 100%; */
+}
+.photo-grid__list {
+  /*remove list styles */
+  list-style: none;
+  padding: 0px;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  margin: 118px auto 92px auto; /* top right bottom left */
-  max-width: 1184px;
+}
+
+.photo-grid__list-item {
 }
 
 .photo-grid__item {
-  width: 284px; /*bigger-original img size- at smaller screen size */
-  height: auto;
+  width: 100%; /*100% instead of 284px */ /*bigger-original img size- at smaller screen size */
 }
 
 /*styles for 768px screen */
@@ -23,7 +44,6 @@
 
   .photo-grid__item {
     width: 100%; /*bigger-original img size- at smaller screen size */
-    height: auto;
   }
 
   /*for grid you can give preferred width and max width (better than flexbox)*/
