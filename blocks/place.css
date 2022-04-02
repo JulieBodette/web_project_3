@@ -186,12 +186,11 @@
   }
   .place__button {
     margin-left: 10px;
-    max-width: 288px;
+    width: 288px;
     padding: 0px; /* fix scroll issue on 320+ px resolution */
   }
   .place__button-text {
-    /*smaller sizes than figma to remove scrollbar */
-    padding: 12px 40px 10px 40px; /* top right bottom left */
-    font-size: 14px;
+    text-align: center;
+    font-size: 18px;
   }
 }
