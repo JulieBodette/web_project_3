@@ -11,8 +11,11 @@
 }
 
 /*styles for 320px screen*/
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 610px) {
   .header__logo {
     max-width: 200px;
+  }
+  .header {
+    padding-bottom: 50.15px; /*style from figma */
   }
 }

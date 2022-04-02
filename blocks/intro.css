@@ -4,7 +4,7 @@
 }
 
 .intro__title {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 900;
   font-size: 54px;
@@ -15,7 +15,7 @@
 }
 
 .intro__quote {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -28,7 +28,7 @@
 }
 
 .intro__name {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -37,13 +37,13 @@
   margin: 0px 0px 32px 0px; /*reset */ /* top right bottom left */
   padding: 0px; /*reset */
   /* identical to box height, or 142% */
-
   text-align: right; /*goes on right side */
 }
 
 .intro__text {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
+  max-width: 720px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.63;
@@ -58,14 +58,20 @@
     padding-left: 24px;
     max-width: 720px;
   }
-
   .intro__title {
     margin: 88px 0px 40px 0px; /*88 top changed */ /* top right bottom left */
+  }
+  .intro__quote {
+    max-width: 720px;
+  }
+
+  .intro__name {
+    max-width: 720px;
   }
 }
 
 /*styles for 320px screen*/
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 610px) {
   .intro {
     padding-left: 16px;
     max-width: 288px;
@@ -75,7 +81,6 @@
     font-size: 32px;
     line-height: 35px;
   }
-
   .intro__quote {
     line-height: 30px;
   }

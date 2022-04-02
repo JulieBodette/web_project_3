@@ -2,7 +2,7 @@
 }
 
 .footer__text {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -10,7 +10,6 @@
   /* identical to box height, or 114% */
   text-align: center;
   color: #ffffff;
-
   padding: 0px; /*reset */
   margin: 92px auto 24px auto; /* top right bottom left */
 }
@@ -23,7 +22,7 @@
 }
 
 /*styles for 320px screen*/
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 610px) {
   .footer__text {
     margin: 64px auto 24px auto; /* top right bottom left */
   }

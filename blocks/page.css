@@ -13,7 +13,7 @@
 }
 
 /*styles for 320px screen*/
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 610px) {
   .page__content {
     max-width: 320px;
   }

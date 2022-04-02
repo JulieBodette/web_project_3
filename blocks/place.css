@@ -4,7 +4,6 @@
     "header artist"
     "image text"
     "button text"; /*text takes up 2 cells*/
-
   /*set these values on the objects with grid-area:name */
   margin: 0px auto 80px auto; /* top right bottom left */
   max-width: 984px;
@@ -13,7 +12,7 @@
 }
 
 .place__header {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -35,7 +34,7 @@
 }
 
 .place__artist-label {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -49,7 +48,7 @@
 }
 
 .place__artist-text {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -59,7 +58,7 @@
 }
 
 .place__text {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -74,7 +73,7 @@
 }
 
 .place__button {
-  padding: 13px 20px;
+  padding: 0px; /*remove padding so button is not too big. Padding was good when it was a <button> but not an <a> */
   background: #0278fe;
   border: none; /*remove default shadow border style */
   border-radius: 4px;
@@ -89,7 +88,7 @@
 }
 
 .place__button-text {
-  font-family: "Inter";
+  font-family: "Inter", "Arial", sans-serif; /*fallback fonts */
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -106,6 +105,7 @@
     grid-column-gap: 28px; /*gap between paragraph and image */
     margin: 0px auto 72px auto; /* top right bottom left */
     padding-left: 24px;
+    padding-right: 24px;
     grid-template-columns: 340px 1fr;
     /*340px sets first one to 340px exactly. 1fr sets second one to fill the space. */
     /* without 340px 1fr; they would default to auto (same size)*/
@@ -125,6 +125,7 @@
     max-width: 340px;
     font-size: 42px;
     line-height: 46px;
+    align-self: end; /* align with artist text */
   }
 
   .place__paragraph {
@@ -135,7 +136,7 @@
 }
 
 /*styles for 320px screen*/
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 610px) {
   .place {
     display: grid;
     grid-template-areas:
@@ -153,6 +154,7 @@
   }
   .place__image {
     justify-self: auto;
+    width: 100%;
     max-width: 320px;
     height: auto;
     margin: 0px;
@@ -173,12 +175,19 @@
   .place__text {
     margin-left: 16px;
     max-width: 288px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    align-self: stretch;
+    /*should be 30px between text and button */
   }
   .place__button {
-    margin-left: 16px;
-    width: 288px;
+    margin-left: 10px;
+    max-width: 288px;
+    padding: 0px; /* fix scroll issue on 320+ px resolution */
   }
   .place__button-text {
-    padding: 13px 40px 13px 40px; /* top right bottom left */
+    /*smaller sizes than figma to remove scrollbar */
+    padding: 10px 40px 10px 40px; /* top right bottom left */
+    font-size: 14px;
   }
 }
