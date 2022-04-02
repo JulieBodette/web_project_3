@@ -24,6 +24,9 @@
 /*styles for 320px screen*/
 @media screen and (max-width: 610px) {
   .footer__text {
+    margin: 0px; /* top right bottom left */
+  }
+  .footer {
     margin: 64px auto 24px auto; /* top right bottom left */
   }
 }

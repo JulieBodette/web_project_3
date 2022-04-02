@@ -26,7 +26,7 @@
   .photo-grid {
     margin: 90px 24px 88px 24px; /* top right bottom left */ /*manually set left margin 24px*/
     max-width: 720px; /*max width needed to be smaller than screen size before margin auto did anything */
-    grid-template-columns: 1fr 1fr;
+    /* previous columns rule works for all screen sizes so no need for grid-template-columns: 1fr 1fr; */
     grid-template-rows: auto;
     padding: 0px; /*make photos correct size */
   }
@@ -42,7 +42,6 @@
     margin: 90px auto 62px auto; /* top right bottom left */ /*margin auto instead of 16px to prevent scrollbar at small screen size*/
     max-width: 288px; /*max width needed to be smaller than screen size before margin auto did anything */
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
   }
   .photo-grid__item {
     max-width: 288px;
