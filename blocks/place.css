@@ -107,6 +107,7 @@
     padding-left: 24px;
     padding-right: 24px;
     grid-template-columns: minmax(auto, 340px) minmax(auto, 352px); /*minmax(min,max) Set max width to 340*/
+    width: fit-content; /*gets rid of extra grid space and allows it to be centered */
     /*340px sets first one to 340px exactly. 1fr sets second one to fill the space. */
     /* without 340px 1fr; they would default to auto (same size)*/
     grid-template-rows: auto auto 1fr;
@@ -117,6 +118,7 @@
   .place__image {
     height: auto;
     justify-self: end; /*makes sure there is space on the left and it is close to the text */
+    max-width: 100%; /*make sure image does not extend beyond container (max size 340px) */
     /*smaller size 340px*/
   }
 
@@ -173,7 +175,7 @@
   }
 
   .place__text {
-    margin-left: 16px;
+    margin: 0 auto; /*center it */
     max-width: 288px;
     /*margin-bottom: 0px;
     padding-bottom: 0px;
@@ -185,7 +187,7 @@
     margin-bottom: 0px;
   }
   .place__button {
-    margin-left: 10px;
+    margin: 0 auto; /*center it */
     width: 288px;
     padding: 0px; /* fix scroll issue on 320+ px resolution */
   }

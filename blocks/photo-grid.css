@@ -24,9 +24,9 @@
 /*styles for 768px screen */
 @media screen and (max-width: 1024px) {
   .photo-grid {
-    margin: 90px 24px 88px 24px; /* top right bottom left */ /*manually set left margin 24px*/
+    margin: 90px auto 88px auto; /* top right bottom left */ /*manually set left margin 24px*/
     max-width: 720px; /*max width needed to be smaller than screen size before margin auto did anything */
-    /* previous columns rule works for all screen sizes so no need for grid-template-columns: 1fr 1fr; 
+    /* previous columns rule works for all screen sizes so no need for grid-template-columns: 1fr 1fr; */
     grid-template-rows: auto;
     padding: 0px; /*make photos correct size */
   }
